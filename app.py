@@ -7,6 +7,10 @@ import streamlit as st
 uploaded_files = st.file_uploader(
     "Choose an image file", accept_multiple_files=True
 )
+
+title = st.text_input("Enter Text for Highlighting", "")
+st.write("Text will be highlighted in your uploaded image", title)
+
 for uploaded_file in uploaded_files:
     bytes_data = uploaded_file.read()
     st.write("filename:", uploaded_file.name)
@@ -15,7 +19,8 @@ for uploaded_file in uploaded_files:
     filename = uploaded_file.name
     # filename = 'nationalpost_gam.png'
     # text_search = "optimera"
-    text_search = "optimera=Z,"
+    # text_search = "optimera=Z,"
+    text_search = title
     # text_search = "optimera=Z(,[A-Z]\d+){8}"
     # text_search = "optimera=Z(,[A-Z][A-Z]?\d+)*"
     # text_search = r"ad\-[A-Z][0-9]{6}"
