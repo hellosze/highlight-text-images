@@ -37,4 +37,6 @@ for i in range(boxes):
         alpha = 0.2  # Transparency factor.
         # Following line overlays transparent rectangle over the image
         img = cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0)
-cv2.imwrite("output_232323s.jpg",img)
+cv2.imwrite("output.jpg",img)
+
+st.image("output.jpg)
