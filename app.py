@@ -18,7 +18,7 @@ for uploaded_file in uploaded_files:
 # filename = 'SCR-20250508-mlfh.png'
 # filename = 'SCR-20250508-mzsk.png'
 # filename = 'SCR-20250522-oyfe.png'
-filename = uploaded_file.name
+    filename = uploaded_file.name
 # filename = 'nationalpost_gam.png'
 # text_search = "optimera"
 text_search = "optimera=Z,"
