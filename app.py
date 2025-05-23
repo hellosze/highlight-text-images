@@ -2,7 +2,7 @@
 # this script highlights text where the word is optimera and input file is an image, preferrably a screenshot
 import cv2,re
 import pytesseract
-
+import streamlit as st
 
 # filename = 'quotes1.png'
 # filename = 'SCR-20250508-iwpp.png'
