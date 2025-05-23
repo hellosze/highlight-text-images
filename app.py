@@ -39,4 +39,4 @@ for i in range(boxes):
         img = cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0)
 cv2.imwrite("output.jpg",img)
 
-st.image("output.jpg)
+st.image("output.jpg")
