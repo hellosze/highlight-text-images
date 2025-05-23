@@ -4,12 +4,21 @@ import cv2,re
 import pytesseract
 import streamlit as st
 
+uploaded_files = st.file_uploader(
+    "Choose an image file", accept_multiple_files=True
+)
+for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
+    st.write(bytes_data)
+    
 # filename = 'quotes1.png'
 # filename = 'SCR-20250508-iwpp.png'
 # filename = 'SCR-20250508-iwur.png'
 # filename = 'SCR-20250508-mlfh.png'
 # filename = 'SCR-20250508-mzsk.png'
-filename = 'SCR-20250522-oyfe.png'
+# filename = 'SCR-20250522-oyfe.png'
+filename = uploaded_file.name
 # filename = 'nationalpost_gam.png'
 # text_search = "optimera"
 text_search = "optimera=Z,"
